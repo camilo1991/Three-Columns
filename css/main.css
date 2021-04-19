@@ -1,0 +1,125 @@
+.content {
+    max-width: 55%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sedans {
+    background-color: #e28525;
+    height: 455px;
+    border-radius: 2% 0% 0% 2%;
+}
+.suvs {
+    background-color: #016972;
+    height: 455px;
+}
+.luxury {
+    background-color: #00403f;
+    height: 455px;
+    border-radius: 0% 2% 2% 0%;
+}
+.icons {
+    padding: 10% 0% 0% 10%;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 35px;
+    padding: 2% 10%;
+    font-weight: bold;
+    color: #fff;
+}
+p {
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    padding: 2% 10%;
+    color: #fff;
+    text-align: left;
+}
+.button_y {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: #e28525;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    max-height: 100%;
+    min-width: 20%;
+    padding: 1%;
+}
+
+.button_g {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: #016972;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    max-height: 100%;
+    min-width: 20%;
+    padding: 1%;
+}
+.button_go {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    color: #00403f;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    max-height: 100%;
+    min-width: 20%;
+    padding: 1%;
+}
+button:hover {
+    color: #fff;
+    background: transparent;
+}
+.center_btn {
+    width: 140px;
+    height: 50px;
+    margin: 25% 0% 0% 10%;
+    /*margin-left: 50%; para centrar
+    transform: translateX(-50%);    */
+}
+@media only screen and (max-width: 1000px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sedans {
+        background-color: #e28525;
+        height: 552px;
+        border-radius: 2% 2% 0% 0%;
+    }
+    .suvs {
+        background-color: #016972;
+        height: 552px;
+    }
+    .luxury {
+        background-color: #00403f;
+        height: 552px;
+        border-radius: 0% 0% 2% 2%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .content {
+        max-width: 95%;
+        margin: auto;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    p {
+        font-size: 16px;
+        padding: 2% 12%;
+        color: #fff;
+        text-align: left;
+    }
+}
